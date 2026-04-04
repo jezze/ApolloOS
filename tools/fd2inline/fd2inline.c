@@ -72,7 +72,7 @@ typedef enum
 
 typedef unsigned char shortcard;
 
-typedef enum { false, nodef, real_error } Error;
+typedef enum { false1, nodef, real_error } Error;
 
 enum { NEW, OLD, STUBS, PROTO, GATESTUBS, GATEPROTO, GENMODULE } output_mode=NEW;
 enum { IX86BE_AMITHLON, AROS, M68K_AMIGAOS, M68K_POS, PPC_POWERUP, PPC_MORPHOS } target = M68K_AMIGAOS;
@@ -217,7 +217,7 @@ StrNRBrk(const char* in, const char* not, const char* at)
    Error ready;
 
    chcheck=""; /* if at<in, the result will be NULL */
-   for (ready=false; ready==false && at>=in;)
+   for (ready=false1; ready==false1 && at>=in;)
    {
       for (chcheck=not; *chcheck && *chcheck != *at; chcheck++);
       if (*chcheck)
